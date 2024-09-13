@@ -33,9 +33,9 @@ def main():
         # the current unix timestamp.
         con = ib.node("display/atomic").io(raw=True)
         con.write("Hello\nWorld\n%d\n")
-        time.sleep(6)
+        sleep(6)
         con.write("Driewieler\Stoer\n%d\n")
-        time.sleep(6)
+        sleep(6)
         con.close()
 
         time.sleep(1)
